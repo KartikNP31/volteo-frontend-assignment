@@ -6,7 +6,7 @@ import { menuItems } from "../data";
 const Sidebar = () => {
 
   return (
-    <div className="mt-0 w-[110px] h-[740px] py-2 px-2 flex flex-col items-center ">
+    <div className="mt-0 w-[110px] h-[735px] py-2 px-2 flex flex-col items-center ">
       <div className="w-full h-full flex flex-col justify-around px-2 rounded-lg border border-gray-300">
         {menuItems.map((item, index) => (
           <div

@@ -6,7 +6,7 @@ import StatementFact from "./StatementFact";
 
 const Home = () => {
     return (
-        <div className="flex gap-3 py-2 ">
+        <div className="flex justify-between gap-3 py-2 w-full pr-2">
             <div>
                 <div>
                     <UserDetails />

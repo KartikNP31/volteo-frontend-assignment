@@ -77,33 +77,33 @@ import React from 'react';
 // Main App Component
 
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
-import Error from './Components/ErrorComponent/Error';
 import LandingPage from './Components/LandingPage';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 import Home from './Components/Home';
+import MyDay from './Components/MyDay';
+import StatementFact from './Components/StatementFact';
+import UserDetails from './Components/UserDetails';
+import DailyStream from './Components/DailyStream';
 
 const App = () => {
   
 
   return (
     <div className="App h-full">
-      <LandingPage />
-      {/* <Home/> */}
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route element={<LandingPage />} >
             <Route path='/' element={<Navigate to="/Home" replace/>} />
             <Route path='/Home' element={<Home />} />
-            <Route path='/Header' element={<Header/>} />
-            <Route path='/Sidebar' element={<Sidebar/>} />
-
-            
-            
+            <Route path='/MyDay' element={<MyDay />} />
+            <Route path='/DailyStream' element={<DailyStream />} />
+            <Route path='/UserDetails' element={<UserDetails />} />
+            <Route path='/StatementFact' element={<StatementFact />} />
           </Route>
-          <Route path='*' element={<Error/>}/>
+          <Route path='*' element={<Navigate to="/"/>}/>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 };

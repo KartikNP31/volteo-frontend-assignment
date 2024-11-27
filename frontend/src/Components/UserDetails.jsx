@@ -4,7 +4,7 @@ import { userInfo } from "../data";
 
 const UserDetails = () => {
   return (
-    <div className="h-[360px] w-[344px] px-6 pt-6 mb-2 rounded-lg border border-gray-300">
+    <div className="h-[360px] min-w-[350px] px-6 pt-6 rounded-lg border border-gray-300">
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <img src={userInfo.greetings} alt="Hello" className="h-[34px] w-[34px]"/>

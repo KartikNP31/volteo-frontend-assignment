@@ -3,7 +3,7 @@ import { StatementFactDetails } from "../data";
 
 const StatementFact = () => {
   return (
-    <div className="p-4 rounded-md border border-gray-300">
+    <div className="p-4 rounded-md border mt-2 border-gray-300">
       <div>
         <div className="flex items-center justify-between">
           <img src={StatementFactDetails.icon} alt="icon" className="h-8 w-8 mr-2" />

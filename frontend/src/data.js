@@ -13,6 +13,10 @@ const UserBadge = require('./assets/Icons/UserBadge.png');
 const StatementFact = require('./assets/Icons/StatementFact.png');
 const SunCloud = require('./assets/Icons/SunCloud.png');
 export const Options_3dot = require('./assets/Icons/Options_3dot.png');
+export const AddIcon = require('./assets/Icons/AddIcon.png');
+export const AttachmentIcon = require('./assets/Icons/AttachmentIcon.png');
+export const ViewsIcon = require('./assets/Icons/ViewsIcon.png');
+export const RefreshIcon = require('./assets/Icons/RefreshIcon.png');
 
 
 
@@ -57,17 +61,8 @@ export const StatementFactDetails = {
   icon : StatementFact
 }
 
-
-// export const tasks = [
-//   { title: '0800-1200 Watch', status: 'Completed', dueDate: '2023-03-02T00:00:00' },
-//   { title: 'COVID19 Health Guidelines', status: 'Due in 2 days', dueDate: '2023-03-04T00:00:00' },
-//   { title: 'Steering Check', status: 'Due in 2 hours', dueDate: '2023-03-02T10:00:00' },
-//   { title: 'ECDIS Check', status: 'Due in 6 hours', dueDate: '2023-03-02T14:00:00' },
-//   { title: 'Review Noon Report', status: 'Due in 8 hours', dueDate: '2023-03-02T16:00:00' },
-// ];
-
 export const myDayTasks = [
-  [{ day: "Tuesday, March 2", icon : SunCloud }],
+  [{ day: "Tuesday, March 2", icon : SunCloud}],
   [
     {
       id: 1,
@@ -75,34 +70,43 @@ export const myDayTasks = [
       assignedBy: "Wayship",
       completed: true,
       dueIn: null,
+      urgent : false
     },
     {
       id: 2,
       title: "COVID19 Health Guidelines",
       assignedBy: "Technical",
       completed: false,
-      dueIn: "2 days",
+      dueIn: "days",
+      dueInTime : "2",
+      urgent : true
     },
     {
       id: 3,
       title: "Steering Check",
       assignedBy: "Captain",
       completed: false,
-      dueIn: "2 hours",
+      dueIn: "hours",
+      dueInTime : "2",
+      urgent : false
     },
     {
       id: 4,
       title: "ECDIS Check",
       assignedBy: "Chief Officer",
       completed: false,
-      dueIn: "6 hours",
+      dueIn: "hours",
+      dueInTime : "6",
+      urgent : false
     },
     {
       id: 5,
       title: "Review Noon Report",
       assignedBy: "Self",
       completed: false,
-      dueIn: "8 hours",
+      dueIn: "hours",
+      dueInTime : "8",
+      urgent : false
     },
   ]
 ];
@@ -116,14 +120,16 @@ export const dailyStreamUpdates = [
   },
   {
     type: "update",
+    person : "Second Officer Oliver",
     title:
-      "Second Officer Oliver submitted the Deck Log for 1400-1500 watch hour and completed the Handover Checklist",
+      "submitted the Deck Log for 1400-1500 watch hour and completed the Handover Checklist",
     timestamp: "UTC 1105 | LT +06:30",
   },
   {
     type: "update",
+    person : "Third Engineer Edward",
     title:
-      "Third Engineer Edward submitted the Engine Log for 1200-1600 watch hour and completed the Handover Checklist",
+      "submitted the Engine Log for 1200-1600 watch hour and completed the Handover Checklist",
     timestamp: "UTC 1055 | LT +06:30",
   },
 ];
