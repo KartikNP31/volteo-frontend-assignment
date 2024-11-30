@@ -1,7 +1,5 @@
 import React from "react";
-
 import { menuItems } from "../data";
-
 
 const Sidebar = () => {
 
@@ -15,7 +13,6 @@ const Sidebar = () => {
               item.isActive ? "bg-blue-100 text-blue-600" : "text-gray-700"
             } hover:bg-blue-50 hover:text-blue-500`}
           >
-            {/* Placeholder for SVG Icon */}
             <img
               src={item.icon}
               alt={`${item.name} Icon`}

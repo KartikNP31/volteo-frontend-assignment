@@ -2,27 +2,6 @@ import React from "react";
 import { AttachmentIcon, RefreshIcon, dailyStreamUpdates as updates, ViewsIcon } from "../data";
 
 const DailyStream = () => {
-  // const updates = [
-  //     {
-  //     type: "important",
-  //     title: "Captain’s Bridge Order dated Nov 27, 2020",
-  //     views: 1,
-  //     action: "READ",
-  //     },
-  //     {
-  //     type: "update",
-  //     title:
-  //         "Second Officer Oliver submitted the Deck Log for 1400-1500 watch hour and completed the Handover Checklist",
-  //     timestamp: "UTC 1105 | LT +06:30",
-  //     },
-  //     {
-  //     type: "update",
-  //     title:
-  //         "Third Engineer Edward submitted the Engine Log for 1200-1600 watch hour and completed the Handover Checklist",
-  //     timestamp: "UTC 1055 | LT +06:30",
-  //     },
-  // ];
-
     return (
         <div className="max-w-md min-h-full mx-auto bg-blue-100 p-6 rounded-lg">
         <div className="flex flex-col justify-between items-left pb-4">

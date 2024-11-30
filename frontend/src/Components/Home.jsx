@@ -5,26 +5,24 @@ import UserDetails from "./UserDetails";
 import StatementFact from "./StatementFact";
 
 const Home = () => {
-    return (
-        <div className="flex justify-between gap-3 py-2 w-full pr-2">
-            <div>
-                <div>
-                    <UserDetails />
-                </div>
-                
-                <div>
-                    <StatementFact />
-                </div>
-            </div>
-            <div className="">
-                <DailyStream />
-            </div>
-            {/* <div className="w-64 bg-white p-4 rounded-md shadow"> */}
-            <div className="">
-                <MyDay />
-            </div>
+  return (
+    <div className="flex justify-between gap-3 py-2 w-full pr-2">
+      <div>
+        <div>
+          <UserDetails />
         </div>
-    );
+        <div>
+          <StatementFact />
+        </div>
+      </div>
+      <div className="">
+        <DailyStream />
+      </div>
+      <div className="">
+        <MyDay />
+      </div>
+    </div>
+  );
 };
 
 export default Home;

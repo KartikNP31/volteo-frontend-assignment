@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
 import { Options_3dot, myDayTasks, AddIcon } from "../data";
 
 const MyDay = () => {
   const [tasks, setTasks] = useState(myDayTasks[1]);
-
   const toggleTaskCompletion = (id) => {
     const updatedTasks = tasks.map((task) =>
       task.id === id ? { ...task, completed: !task.completed } : task
@@ -23,9 +21,7 @@ const MyDay = () => {
           />
         </div>
         <div className="flex items-center ">
-          <span className="text-sm text-gray-400 ">
-            {myDayTasks[0][0].day}
-          </span>
+          <span className="text-sm text-gray-400 ">{myDayTasks[0][0].day}</span>
         </div>
         <div className="mt-4">
           {tasks.map((task) => (
@@ -33,7 +29,11 @@ const MyDay = () => {
               key={task.id}
               className={`items-center flex justify-between mt-2 p-3 rounded-lg bg-slate-50 hover:bg-slate-100 hover:shadow-md ${
                 task.completed ? "line-through text-black " : ""
-              } border ${task.urgent && !task.completed ? "border-red-400" : "border-none"}`}
+              } border ${
+                task.urgent && !task.completed
+                  ? "border-red-400"
+                  : "border-none"
+              }`}
             >
               <div className="flex items-center">
                 <input
@@ -43,7 +43,11 @@ const MyDay = () => {
                   className="w-5 h-5 mr-4 checked:accent-green-600"
                 />
                 <div className="flex flex-col justify-start">
-                  <h3 className={`text-xs font-medium text-gray-800 ${task.urgent && !task.completed ? "text-red-500" : ""}`}>
+                  <h3
+                    className={`text-xs font-medium text-gray-800 ${
+                      task.urgent && !task.completed ? "text-red-500" : ""
+                    }`}
+                  >
                     {task.title}
                   </h3>
                   <p className="text-xs text-gray-500">
@@ -54,7 +58,11 @@ const MyDay = () => {
                     <span> | </span>
                     <span
                       className={`${
-                        !task.completed && task.dueIn && task.dueIn === "hours" && task.dueInTime && Number(task.dueInTime) <= 2
+                        !task.completed &&
+                        task.dueIn &&
+                        task.dueIn === "hours" &&
+                        task.dueInTime &&
+                        Number(task.dueInTime) <= 2
                           ? "text-red-400"
                           : "border-none"
                       }`}
