@@ -14,8 +14,9 @@ Please follow the below steps to run the application.
 
 - **Insatalltion**:
   - Unzip (extract) `volteo-frontend-assignment` file 
-  - Open `volteo-frontend-assignment` in terminal.
-  - Run the Following commands in terminal (`volteo-frontend-assignment` directory) to install packages and run application in localhost
+  - Open `volteo-frontend-assignment` in terminal and run following command.
+> - ```cd frontend```
+  - Run the Following commands in terminal (`frontend` directory) to install packages and run application in localhost
 > - ``` npm install ```
 > - ``` npm start ```
 
